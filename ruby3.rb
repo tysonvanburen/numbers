@@ -1,6 +1,6 @@
-puts "Pick a color!!! (Green, Blue, Yellow, Orange, Purple, Pink)"
+puts "Guess my color!!! (Green, Blue, Yellow, Orange, Purple, Pink)"
 
-puts "Choose, than hit return a couple of times to see if you got it right!"
+puts "Choose, then hit return a couple of times to see if you got it right!"
 
 color_pick = gets.chomp
 green_answer = gets.chomp

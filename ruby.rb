@@ -1,19 +1,11 @@
-puts "What is the first number?"
-first_number = gets.chomp.to_i
-puts "Second number"
-second_number = gets.chomp.to_i
+puts "What would I rather do? (study or watch the game?)"
+choice = gets.chomp
 
-puts "Which one would you like to use? (+,-,/,*)"
-operation = gets.chomp
 
-  if operation == "+"
-   answer = first_number + second_number
-  elsif operation == "-"
-    answer = first_number - second_number
-  elsif operation == "/"
-    answer = first_number / second_number
-  elsif operation == "*"
-    answer = first_number * second_number
+if choice == "study"
+  result = "Do the smarty pants dance!"
+elsif choice == "watch the game"
+  result = "Now you're falling behind...but the game was pretty bad ass!"
 end
 
-puts "The answer to the equation is #{answer}"
+puts "#{result} "
