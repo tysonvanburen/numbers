@@ -1,27 +1,27 @@
-puts "Guess my color!!! (Green, Blue, Yellow, Orange, Purple, Pink)"
+favorite_color = "Green"
+total_guesses = 0
 
-puts "Choose, then hit return a couple of times to see if you got it right!"
 
-color_pick = gets.chomp
-green_answer = gets.chomp
-blue_answer = gets.chomp
-yellow_answer = gets.chomp
-orange_answer = gets.chomp
-purple_answer = gets.chomp
-pink_answer = gets.chomp
+puts "Guess my favorite color!! (Green, Blue, Yellow, Orange, Purple, Pink)"
+guess = gets.chomp.downcase
 
-if color_pick == "Green"
-  green_answer = "Correct!!"
-elsif color_pick == "Blue"
-  blue_answer = "Wrongo!"
-elsif color_pick == "Yellow"
-  yellow_answer = "Nope"
-elsif color_pick == "Orange"
-  orange_answer = "Nice try"
-elsif color_pick == "Purple"
-  purple_answer = "Really?"
-elsif color_pick == "Pink"
-  pink_answer = "Douche!!!"
+while favorite_color != guess && total_guesses <= 5
+
+
+  if guess == "Blue"
+    puts "Wrongo!"
+  elsif guess == "Yellow"
+    puts "Wrong again!"
+  elsif guess == "Orange"
+    puts "Keep trying"
+  elsif guess == "Purple"
+    puts "Really?"
+  elsif guess == "Pink"
+    puts "Douche!"
+  end
+
+total_guesses += 1
+
 end
 
-puts "#{green_answer} #{blue_answer} #{yellow_answer} #{orange_answer} #{purple_answer} #{pink_answer}"
+puts "#{favorite_color} is my favorite color!"
